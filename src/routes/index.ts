@@ -1,6 +1,6 @@
-import HomePage from "../pages/home/index";
-import VideoPage from "../pages/video/index";
-import GifPage from "../pages/gif/index";
+import HomePage from "../pages/Home/index";
+import VideoPage from "../pages/Video/index";
+import GifPage from "../pages/Gif/index";
 import { IRoute, RouteNames } from "../types/router";
 
 export const publicRoutes: IRoute[] = [

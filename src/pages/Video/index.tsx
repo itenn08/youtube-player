@@ -86,7 +86,7 @@ const VideoPage = (): React.ReactElement => {
           EDIT LINK
         </button>
         <button className={styles.btn} onClick={toGIF}>
-          GIF
+          WATCH GIF
         </button>
       </div>
       <div className={styles.player}>

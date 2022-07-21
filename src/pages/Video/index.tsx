@@ -83,7 +83,7 @@ const VideoPage = (): React.ReactElement => {
           disabled={data.video?.videoOption?.play}
           onClick={toBack}
         >
-          Edit
+          EDIT LINK
         </button>
         <button className={styles.btn} onClick={toGIF}>
           GIF

@@ -1,17 +1,17 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { publicRoutes } from ".";
-import Page from "../components/page/index";
+import { routes } from ".";
+import Page from "../components/Page/index";
 
 const Router = () => (
   <BrowserRouter>
     <Routes>
-      {publicRoutes.map((route) => {
+      {routes.map((route) => {
         const ComponentRoute = route.component;
         return (
           <Route
-            path={`${route.path}`}
+            path={route.path}
             element={
               <Page title={route.titleName}>
                 <ComponentRoute />

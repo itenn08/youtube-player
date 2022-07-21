@@ -18,15 +18,15 @@ const App = () => {
       value={{
         video: {
           videoOption,
-          setVideoOptionUrl: (url: string) =>
-            setVideoOption((prev) => ({ ...prev, url: `${url}` })),
-          setVideoOptionTime: (time: number | null) =>
+          setVideoUrl: (url: string) =>
+            setVideoOption((prev) => ({ ...prev, url })),
+          setVideoTime: (time: number | null) =>
             setVideoOption((prev) => ({ ...prev, time })),
-          setVideoOptionPlay: (play: boolean) =>
+          setVideoPlay: (play: boolean) =>
             setVideoOption((prev) => ({ ...prev, play })),
-          setVideoOptionDone: (done: boolean) =>
+          setVideoDone: (done: boolean) =>
             setVideoOption((prev) => ({ ...prev, done })),
-          setVideoOptionOld: (old: string) =>
+          setVideoOld: (old: string) =>
             setVideoOption((prev) => ({ ...prev, old })),
           setVideoOption: (name: string, value: any) =>
             setVideoOption((prev) => ({ ...prev, [name]: value })),

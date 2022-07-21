@@ -14,8 +14,8 @@ const HomePage = (): React.ReactElement => {
   const [inputUrl, setInputUrl] = useState(data.video.videoOption.url || "");
 
   const setUrl = () => {
-    data?.video.setVideoOptionUrl(inputUrl);
-    data.video.setVideoOptionPlay(false);
+    data?.video.setVideoUrl(inputUrl);
+    data.video.setVideoPlay(false);
     navigate(RouteNames.VIDEO);
   };
 
